@@ -1,0 +1,35 @@
+<!DOCTYPE html>  
+ <html>  
+    <head>  
+        <title>Webslesson Tutorial | Ajax PHP MySQL Date Range Search using jQuery DatePicker</title>  
+        <meta charset="utf-8">
+        
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>   
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"> 
+    </head>  
+    <script src="https://rawgit.com/zorab47/jquery.ui.monthpicker/master/jquery.ui.monthpicker.js"></script> 
+    <body>
+        <div class="col-md-2">
+            <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text bg-info text-white" id="basic-addon1">
+                <i class="fas fa-calendar-alt"></i>
+                </span>
+            </div>
+            <input type="text" class="form-control" id="start_date" placeholder="Période du..." readonly>
+            </div>
+        </div>
+    </body>
+</html>      
+    <script>
+        $(function () {
+            $('#start_date').monthpicker({dateFormat: 'mm-yy',
+            prevText: 'Précédent',   // Display text for previous month link
+            nextText: 'Suivant',
+            monthNames: ['janvier','Février','Mars','Avril','Mai','Juin', 'Juillet','Août','Septembre','Octobre', 'Novembrer','Décembre'],
+            monthNamesShort: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'] 
+            });
+        });
+    
+</script>
